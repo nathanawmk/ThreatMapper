@@ -4,6 +4,8 @@ services:
   deepfence-postgres:
     container_name: deepfence-postgres
     image: deepfenceio/deepfence_postgres_ce:latest
+    ulimits:
+      core: 0
     restart: on-failure
     networks:
       - deepfence_net
@@ -17,6 +19,8 @@ services:
   deepfence-redis:
     container_name: deepfence-redis
     image: deepfenceio/deepfence_redis_ce:latest
+    ulimits:
+      core: 0
     restart: on-failure
     networks:
       - deepfence_net
@@ -28,6 +32,8 @@ services:
   deepfence-fetcher:
     container_name: deepfence-fetcher
     image: deepfenceio/deepfence_fetcher_ce:latest
+    ulimits:
+      core: 0
     depends_on:
       - deepfence-postgres
     networks:
@@ -43,6 +49,8 @@ services:
   deepfence-topology:
     container_name: deepfence-topology
     image: deepfenceio/deepfence_discovery_ce:latest
+    ulimits:
+      core: 0
     networks:
       - deepfence_net
     ports:
@@ -63,6 +71,7 @@ services:
     volumes:
       - deepfence_data_community:/data:rw
     ulimits:
+      core: 0
       memlock:
         soft: -1
         hard: -1
@@ -79,6 +88,8 @@ services:
   deepfence-router:
     container_name: deepfence-router
     image: deepfenceio/deepfence_router_ce:latest
+    ulimits:
+      core: 0
     networks:
       - deepfence_net
     restart: always
@@ -98,6 +109,8 @@ services:
   deepfence-api:
     container_name: deepfence-api
     image: deepfenceio/deepfence_api_ce:latest
+    ulimits:
+      core: 0
     tmpfs:
       - /tmp
     networks:
@@ -118,6 +131,8 @@ services:
   deepfence-celery:
     container_name: deepfence-celery
     image: deepfenceio/deepfence_api_ce:latest
+    ulimits:
+      core: 0
     entrypoint: /app/code/dockerify/celery/entrypoint
     restart: on-failure
     environment:
@@ -138,6 +153,8 @@ services:
   deepfence-backend:
     container_name: deepfence-backend
     image: deepfenceio/deepfence_api_ce:latest
+    ulimits:
+      core: 0
     entrypoint: /app/code/dockerify/backend/entrypoint
     restart: on-failure
     networks:
@@ -153,6 +170,8 @@ services:
   deepfence-ui:
     container_name: deepfence-ui
     image: deepfenceio/deepfence_ui_ce:latest
+    ulimits:
+      core: 0
     networks:
       - deepfence_net
     restart: on-failure
@@ -166,6 +185,8 @@ services:
   deepfence-diagnosis:
     container_name: deepfence-diagnosis
     image: deepfenceio/deepfence_diagnosis_ce:latest
+    ulimits:
+      core: 0
     networks:
       - deepfence_net
     volumes:
@@ -179,6 +200,8 @@ services:
   deepfence-vulnerability-mapper:
     container_name: df-vulnerability-mapper
     image: deepfenceio/deepfence_vulnerability_mapper_ce:latest
+    ulimits:
+      core: 0
     restart: "no"
     networks:
       - deepfence_net
