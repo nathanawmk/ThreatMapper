@@ -3,18 +3,18 @@
 
 [<img src="https://img.shields.io/badge/slack-@deepfence-brightgreen.svg?logo=slack">](https://join.slack.com/t/deepfence-community/shared_invite/zt-podmzle9-5X~qYx8wMaLt9bGWwkSdgQ)  
 
-# Deepfence Runtime Threat Mapper
-The Deepfence Runtime Threat Mapper is a subset of the Deepfence cloud native workload protection platform, released as a community edition. This community edition empowers the users with following features:
+# Deepfence Runtime ThreatMapper
+The Deepfence Runtime ThreatMapper is a subset of the Deepfence cloud native workload protection platform, released as a community edition. This community edition empowers the users with following features:
 
-1. Visualization: Visualize kubernetes clusters, virtual machines, containers and images, running processes, and network connections in near real time.
+1. Visualization: Visualize Kubernetes clusters, virtual machines, containers and images, running processes, and network connections in near real time.
 
-2. Runtime Vulnerability Management: Perform vulnerability scans on running containers & hosts as well as container images. 
+2. Runtime Vulnerability Management: Perform vulnerability scans on running containers and hosts as well as container images. 
 
-3. Container Registry Scanning: Check for vulnerabilities in images stored on AWS ECR, Azure Container Registry, Google Container Registry, Docker Hub, Docker Self-Hosted Private Registry, Quay, Harbor, Gitlab and JFrog registries.
+3. Container Registry Scanning: Check for vulnerabilities in images stored on AWS ECR, Azure Container Registry, Google Container Registry, Docker Hub, Docker Self-Hosted Private Registry, Quay, Harbor, GitLab, and JFrog registries.
 
-4. CI/CD Scanning: Scan images as part of existing [CI/CD Pipelines](ci-cd-integrations) like CircleCI, Jenkins & GitLab.
+4. CI/CD Scanning: Scan images as part of existing [CI/CD Pipelines](ci-cd-integrations) like CircleCI, Jenkins, and GitLab.
 
-5. Integrations with SIEM, Notification Channels & Ticketing: Ready to use integrations with Slack, PagerDuty, HTTP endpoint, Jira, Splunk, ELK, Sumo Logic and Amazon S3.
+5. Integrations with SIEM, Notification Channels & Ticketing: Ready to use integrations with Slack, PagerDuty, HTTP endpoint, Jira, Splunk, ELK, Sumo Logic, and Amazon S3.
 
 # Live Demo
 
@@ -42,7 +42,7 @@ The Deepfence Runtime Threat Mapper is a subset of the Deepfence cloud native wo
 * [How do I use Deepfence?](#how-do-i-use-deepfence)
     * [Register a User](#register-a-user)
     * [API Key](#deepfence-api-key)
-    * [Use case - Visualization](#use-case---visualization)
+    * [Use Case - Visualization](#use-case---visualization)
     * [Use Case - Runtime Vulnerability Management](#use-case---runtime-vulnerability-management)
     * [Use Case - Registry Scanning](#use-case---registry-scanning)
     * [Use Case - CI/CD Integration](#use-case---cicd-integration)
@@ -54,7 +54,7 @@ The Deepfence Runtime Threat Mapper is a subset of the Deepfence cloud native wo
 
 # Architecture
 
-A pictorial depiction of the Deepfence Architecture is below
+A pictorial depiction of the Deepfence Architecture is below:
 
 
 ![Deepfence Architecture](images/DF_Architecture.png)
@@ -62,7 +62,7 @@ A pictorial depiction of the Deepfence Architecture is below
 
 # Feature Availability
 
-Features      | Runtime Threat mapper (Community Edition) | Workload Protection Platform (Enterprise Edition)
+Features      | Runtime ThreatMapper (Community Edition) | Workload Protection Platform (Enterprise Edition)
 ------------- | ----------------- | -------------  
 Discover & Visualize Running Pods, Containers and Hosts   | :heavy_check_mark: (unlimited) | :heavy_check_mark: (unlimited)
 Runtime Vulnerability Management for hosts/VMs | :heavy_check_mark: (unlimited) | :heavy_check_mark: (unlimited)
@@ -76,7 +76,7 @@ Deep Packet Inspection of Encrypted & Plain Traffic  | :x:  | :heavy_check_mark:
 API Inspection  | :x:  | :heavy_check_mark:
 Runtime Integrity Monitoring  | :x:  | :heavy_check_mark:
 Network Connection & Resource Access Anomaly Detection  | :x:  | :heavy_check_mark:
-Workload Firewall for Containers, Pods and Hosts  | :x:  | :heavy_check_mark:
+Workload Firewall for Containers, Pods, and Hosts  | :x:  | :heavy_check_mark:
 Quarantine & Network Protection Policies | :x:  | :heavy_check_mark:
 Alert Correlation  | :x:  | :heavy_check_mark:
 Serverless Protection  | :x:  | :heavy_check_mark:
@@ -88,7 +88,7 @@ Enterprise Support  | :x:  | :heavy_check_mark:
 
 # Getting Started
 
-The Deepfence Management Console is first installed on a separate system. The Deepfence agents are then installed onto bare-metal servers, Virtual Machines, or Kubernetes clusters where the application workloads are deployed, so that the host systems, or the application workloads, can be scanned for vulnerabilities.
+The Deepfence Management Console is first installed on a separate system. The Deepfence agents are then installed onto bare-metal servers, virtual machines, or Kubernetes clusters where the application workloads are deployed, so that the host systems, or the application workloads, can be scanned for vulnerabilities.
 
 A pictorial depiction of the Deepfence security platform is as follows: 
 
