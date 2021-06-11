@@ -4,7 +4,7 @@
 [<img src="https://img.shields.io/badge/slack-@deepfence-brightgreen.svg?logo=slack">](https://join.slack.com/t/deepfence-community/shared_invite/zt-podmzle9-5X~qYx8wMaLt9bGWwkSdgQ)  
 
 # Deepfence Runtime ThreatMapper
-The Deepfence Runtime ThreatMapper is a subset of the Deepfence cloud native workload protection platform, released as a community edition. This community edition empowers the users with following features:
+The Deepfence Runtime ThreatMapper empowers the users with following features:
 
 1. Visualization: Visualize Kubernetes clusters, virtual machines, containers and images, running processes, and network connections in near real time.
 
