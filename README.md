@@ -60,30 +60,6 @@ A pictorial depiction of the Deepfence Architecture is below:
 ![Deepfence Architecture](images/DF_Architecture.png)
 
 
-# Feature Availability
-
-Features      | Runtime ThreatMapper (Community Edition) | Workload Protection Platform (Enterprise Edition)
-------------- | ----------------- | -------------  
-Discover & Visualize Running Pods, Containers and Hosts   | :heavy_check_mark: (unlimited) | :heavy_check_mark: (unlimited)
-Runtime Vulnerability Management for hosts/VMs | :heavy_check_mark: (unlimited) | :heavy_check_mark: (unlimited)
-Runtime Vulnerability Management for containers | :heavy_check_mark: (unlimited) | :heavy_check_mark: (unlimited)
-Container Registry Scanning  | :heavy_check_mark:  | :heavy_check_mark:
-CI/CD Integration  | :heavy_check_mark:  | :heavy_check_mark:
-Multiple Clusters  | :heavy_check_mark:  | :heavy_check_mark:
-Integrations with SIEMs, Slack and more | :heavy_check_mark:  | :heavy_check_mark:
-Compliance Automation  | :x:  | :heavy_check_mark:
-Deep Packet Inspection of Encrypted & Plain Traffic  | :x:  | :heavy_check_mark:
-API Inspection  | :x:  | :heavy_check_mark:
-Runtime Integrity Monitoring  | :x:  | :heavy_check_mark:
-Network Connection & Resource Access Anomaly Detection  | :x:  | :heavy_check_mark:
-Workload Firewall for Containers, Pods, and Hosts  | :x:  | :heavy_check_mark:
-Quarantine & Network Protection Policies | :x:  | :heavy_check_mark:
-Alert Correlation  | :x:  | :heavy_check_mark:
-Serverless Protection  | :x:  | :heavy_check_mark:
-Windows Protection  | :x:  | :heavy_check_mark:
-Highly Available & Multi-node Deployment  | :x:  | :heavy_check_mark:
-Multi-tenancy & User Management  | :x:  | :heavy_check_mark:
-Enterprise Support  | :x:  | :heavy_check_mark:
 
 
 # Getting Started
