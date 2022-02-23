@@ -1,15 +1,15 @@
 // Deepfence Management Console
 resource "google_compute_instance" "deepfence-management-console" {
-  name = var.hostname
+  name         = var.hostname
   machine_type = var.machine_type
-  zone = var.region
+  zone         = var.region
   tags = [
-    "deepfence-management-console"]
+  "deepfence-management-console"]
 
   boot_disk {
     initialize_params {
       image = "ubuntu-os-cloud/ubuntu-1804-bionic-v20200610"
-      size = 120
+      size  = 120
     }
   }
 
@@ -39,10 +39,10 @@ resource "google_compute_instance" "deepfence-management-console" {
     ]
 
     connection {
-      type = "ssh"
-      user = var.username
+      type        = "ssh"
+      user        = var.username
       private_key = file(var.ssh_private_key)
-      host = self.network_interface.0.access_config.0.nat_ip
+      host        = self.network_interface.0.access_config.0.nat_ip
     }
   }
 
@@ -54,11 +54,14 @@ resource "google_compute_instance" "deepfence-management-console" {
     ]
 
     connection {
-      type = "ssh"
-      user = var.username
+      type        = "ssh"
+      user        = var.username
       private_key = file(var.ssh_private_key)
-      host = self.network_interface.0.access_config.0.nat_ip
+      host        = self.network_interface.0.access_config.0.nat_ip
     }
+  }
+  labels = {
+    yor_trace = "3ee59860-0c55-4447-994e-83304e6ef40d"
   }
 }
 
